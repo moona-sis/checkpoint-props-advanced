@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+* {
+  font-family: 'Oswald', sans-serif;
+  background-color: #fafafa;
+}
+.navbar {
+  display: flex;
+  background-color: rgb(49, 29, 134);
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  height: 10vh;
+  color: white;
+  position: fixed;
+  width: 100%;
+  font-size: 40px;
+  font-weight: 600;
+  z-index: 1;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  top: 20vh;
+  position: relative;
+  display: flex;
+  min-height: 90vh;
+  height: fit-content;
+  
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.table-product{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.product{
+  border-radius: 6px;
+  box-shadow: -4px -4px 12px 1px rgba(0,0,0,0.10);
+  width: 31%;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  margin-bottom: 20px;
+  cursor: pointer;
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.image{
+  width: 60%;
+}
+.price{
+  font-size: 18px;
+  font-weight: 700 ;
+  
+}
+.name{
+  font-size: 20px;
+  font-weight: 700 ;
+  
+  padding-top: 10px;
+}
+.category{
+  padding-bottom: 10px;
+  font-weight: 600;
 }
